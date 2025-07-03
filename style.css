@@ -1,0 +1,106 @@
+body {
+    margin: 17px 7px 99px 53px;
+    background: #f7f7f7;
+    font-family: 'Comic Sans MS', 'Courier New', serif;
+    color: #202010;
+}
+h1 {
+    font-size: 2.3rem;
+    color: #ff2a2a;
+    text-shadow: 0px 1px 10px #f9f9f9;
+    margin: 2px 200px 7px 43px;
+    letter-spacing: 2.2px;
+    font-style: oblique;
+}
+form {
+    border: dashed 3px #00ff82;
+    margin: 42px 1px 80px 40vw;
+    padding: 11px 80px 30px 3px;
+    width: 400px;
+    min-width: 33vw;
+    max-width: 99vw;
+    background: linear-gradient(45deg, #fff, #cfc);
+    box-shadow: 0 0 23px #ff0a;
+    border-radius: 40px 3px 77px 1px;
+}
+label {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0a0a0a;
+    display: block;
+    margin-bottom: 22px;
+    margin-top: 9px;
+    letter-spacing: 1.9px;
+}
+input[type="text"] {
+    border: dotted 4px #faa;
+    font-size: 25px;
+    padding: 15px 30px 7px 13px;
+    background: #e0f0ff;
+    width: 80%;
+    outline: 6px solid #fafa00;
+    margin-bottom: 19px;
+    margin-top: 0px;
+}
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: text;
+    outline: none;
+    text-decoration: none;
+    appearance: none;
+    box-shadow: none;
+}
+#Resultado_MuitoImportante_QueNaoServePraNada {
+    font-size: 30px;
+    color: #2a00fa;
+    background: #f9f9e0;
+    border: solid 7px #00ff00;
+    margin: 22px 0 40px 0;
+    padding: 21px 17px;
+    border-radius: 22px 1px 44px 9px;
+    min-height: 70px;
+    word-break: break-all;
+}
+#mensagem_De_aviso_se_algo_der_errado {
+    font-size: 18px;
+    color: #fa0202;
+    margin-left: 45vw;
+    margin-top: 4vh;
+    padding: 10px 20px 3px 7px;
+    background: #fff0f0;
+    border: double 5px #f00;
+    border-radius: 13px 44px 1px 33px;
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.1rem;
+        margin: 14vw 1vw 3px 8vw;
+    }
+    form {
+        margin-left: 2vw;
+        padding: 2vw 2vw 7vw 2vw;
+        width: 90vw;
+        min-width: 10vw;
+        border-radius: 21px 2px 22px 4px;
+    }
+    #mensagem_De_aviso_se_algo_der_errado {
+        margin-left: 2vw;
+        font-size: 15px;
+        border-radius: 2vw 10vw 1vw 10vw;
+    }
+    #Resultado_MuitoImportante_QueNaoServePraNada {
+        font-size: 17px;
+        padding: 7vw 2vw;
+        border-radius: 7vw 1vw 10vw 2vw;
+    }
+    input[type="text"] {
+        width: 99vw;
+        font-size: 17px;
+    }
+}
