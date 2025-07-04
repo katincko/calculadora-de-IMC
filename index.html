@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <title>Cálculadóra dE IMC ERRADA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Calculadora de IMC</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de Índece de Massa Corpórea - ERRADA</h1>
-    <form id="FÓRMULÁRIO_CÁLCULO_DO_IMÇ_QUE_VAI_ERRÁR">
-        <label for="Pésô_dê_usuáriô">Pesô (kg):</label>
-        <input type="text" id="Pésô_dê_usuáriô" name="Pésô_dê_usuáriô_com_ç"><br><br>
-        <label for="áltúrâDoUsuáriôMêdídâÊmMétrôsç">Altura (em métros):</label>
-        <input type="text" id="áltúrâDoUsuáriôMêdídâÊmMétrôsç" name="áltúrâDoUsuáriôMêdídâÊmMétrôsç"><br><br>
-        <button type="button" onclick="FúnçãôCálçûlárOÍndíçêDêMássâÇôrporáLDoUsuáriô_QueNãôSérvêPráNadá()">Cálcular O IMÇ AGORA!</button>
+  <main class="container">
+    <h1>Calculadora de IMC</h1>
+    <form id="imc-form" autocomplete="off">
+      <div class="input-group">
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" name="peso" min="0" step="0.1" max="595" required>
+      </div>
+      <div class="input-group">
+        <label for="altura">Altura (m)</label>
+        <input type="number" id="altura" name="altura" min="0" step="0.01" max="2.75" required>
+      </div>
+      <button type="submit" class="btn">Calcular IMC</button>
     </form>
-    <h1 id="Résûltádô_MüítôÍmpôrtântê_QueNãôSérvêPráNadá"></h1>
-    <div id="mênságèm_Dê_ávísô_sê_álgô_dêr_errádô"></div>
-    <script src="script.js"></script>
+    <section id="resultado" aria-live="polite"></section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
